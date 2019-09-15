@@ -1,0 +1,20 @@
+---
+- name: COLLECT BIG-IP FACTS
+  bigip_device_facts:
+    provider: "{{ provider }}"
+    gather_subset:
+      - system-info
+      - virtual-servers
+  register: device_facts
+
+- name: DISPLAY Virtual Servers
+  debug:
+    var: device_facts['virtual_servers']
+
+- name: DISPLAY THE MAC ADDRESS
+  debug:
+    var: device_facts['system_info']['base_mac_address']
+
+- name: DISPLAY THE VERSION
+  debug:
+    var: device_facts['system_info']['product_version']
