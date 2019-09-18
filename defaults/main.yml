@@ -1,8 +1,8 @@
 ---
 # defaults file for f5-role-facts
 provider:
-  server: "{{private_ip}}"
-  user: "{{ansible_user}}"
-  password: "{{ansible_ssh_pass}}"
+  server: "{{ private_ip }}"
+  user: "{{ ansible_user }}"
+  password: "{{ ansible_ssh_pass }}"
   server_port: 8443
   validate_certs: no
