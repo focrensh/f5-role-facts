@@ -14,5 +14,6 @@ galaxy_info:
   galaxy_tags:
     - f5
     - bigip
+    - testrole
 
 dependencies: []
