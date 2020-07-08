@@ -33,3 +33,13 @@ Example Playbook
   - include_role:
       name: focrensh.f5-role-facts
 ```
+
+
+| Variable   | Required | Default | Example                    | Info                                                                                                                                                            |
+|------------|----------|---------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| provider   | yes      | -       | provider: "{{ provider }}" | The  **provider**  dictionary is used in the role to define connection details to the BIG-IP in the same way F5 Modules work.                                   |
+| atc_method | no       | GET     | atc_method: GET            | <li>atc_method accepted values include [POST, GET] for all services, and [DELETE]for AS3 only. <li>atc_deploy role currently does not support AS3 PATCH method. |
+|            |          |         |                            |  <li>item1 <li>item2                                                                                                                                            |
+|            |          |         |                            |                                                                                                                                                                 |
+|            |          |         |                            |                                                                                                                                                                 |
+|            |          |         |                            |                                                                                                                                                                 |
